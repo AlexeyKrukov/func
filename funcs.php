@@ -1,16 +1,18 @@
 <?php
+    
     define("MYSQL_SERVER", 'localhost');
     define("MYSQL_USER", 'root');
     define("MYSQL_PASSWORD", '');
     define("MYSQL_DB", 'informations');
 
     $link = mysqli_connect(MYSQL_SERVER, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB) or die("Connection failed");
-    if($_GET["news"]){
-        $result = get_news($link, $_GET["news"]/*"last three"*/);//тут меняешь параметр, в зависимости от того, что тебе нужно: id, "last three", "all"
-        echo $result;
+    if(isset($_GET['need']) && isset($_GET['kind'])){
+      $st = get_news($link, $_GET['kind']);
+        echo $st;
+        //return $st;
     }
     if($_GET["publications"]){
-        $result = get_publications($link, /*$_GET["publications"]*/"all");//тут то же самое
+        $result = get_publications($link, "all");
         echo $result;
     }
     function get_news($link, $kind){

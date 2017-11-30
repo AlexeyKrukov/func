@@ -1,0 +1,180 @@
+$light_gray: #eaeaea;
+$white: #ffffff;
+$red: #BB2028;
+$standart-font: 17px;
+.rating {
+  width: 100%;
+  * {
+    font-size: $standart-font;
+  }
+
+}
+th {
+  color: #b7b7b7;
+}
+.score {
+  width: 8%;
+  text-align: left;
+}
+tr td:last-of-type {
+  text-align: left;
+}
+.place {
+  width: 13%;
+  padding-left: 4%;
+  padding-top: 37px;
+  font-size: 20px;
+}
+.company_name {
+  width: 44%;
+  padding-left: 0;
+  padding-top: 37px;
+  font-size: 20px;
+}
+.attention {
+  width: 14%;
+  padding-top: 37px;
+  font-size: 20px;
+}
+.monthly_changing {
+  padding-top: 37px;
+  font-size: 20px;
+}
+.score{
+
+  padding-top: 37px;
+  font-size: 20px;
+}
+
+tr:nth-of-type(odd) {
+  background-color: $light_gray;
+}
+tr {
+  border-left: 6px solid $light_gray;
+}
+td {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+td:first-of-type{
+  padding-left: 4%;
+}
+td:nth-of-type(2){
+  padding-left: 0;
+}
+td:nth-of-type(4) img {
+  text-align: center;
+
+}
+td img {
+  max-height: 14px;
+}
+.description{
+  display: none;
+  height: 100px;
+  width: 200px;
+  content: "Отчет сдан с опозданием";
+}
+td:nth-child(3):hover .description {
+  position: absolute;
+  z-index: 9999;
+  top: 500px;
+  left: 500px;
+}
+.column_head:nth-of-type(2) {
+  margin-left: 31px;
+}
+.table_wrapper {
+   /* height: 678px;
+    overflow-y: scroll;*/
+    padding-left: 30px;
+}
+.content_center {
+  .col-md-8 {
+    padding-right:0 ;
+  }
+}
+.tip {
+  position: relative;
+  cursor: pointer;
+
+}
+.tip:before {
+  display: block;
+  position: absolute;
+  content: attr(data-title);
+  background-color: white;
+  border: 1px solid gray;
+  text-align: center;
+  width: 237px;
+  border-radius: 0;
+  left: -164px;
+  margin-top: 13px;
+  padding: 0px 0px;
+  font-size: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .7s;
+  -webkit-transition: opacity .7s;
+  -o-transition: opacity .7s;
+  -moz-transition: opacity .7s;
+}
+.tip:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+tr {
+  td:nth-of-type(4) {
+    width: 3%;
+  }
+}
+.search-bar {
+  display: inline-block;
+  position: relative;
+  padding-left: 27px;
+  outline: none!important;
+}
+.head-search {
+  display: inline-block;
+}
+.glass {
+  background-image: url(/images/glass1.png);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none!important;
+  position: absolute;
+  top: 4px;
+  left: 33px;
+}
+.inp-area {
+  border: 2px solid #A6A8AB;
+  padding: 3px;
+  padding-bottom: 0px;
+  padding-left: 28px;
+  outline: none !important;
+}
+th, td {
+  height: 65px;
+}
+.score {
+  width: 8%;
+}
+.attention-img {
+  position: absolute;
+  left: -35px;
+  top: -2px;
+  max-height: 84px;
+  width: 7px;
+}
+.alert-time::before {
+  background-image: url(/images/attention.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+.alert-time {
+  position: relative;
+}

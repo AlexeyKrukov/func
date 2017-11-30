@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!--  <link rel="stylesheet" href="../css/style.css">-->
+    <link rel="stylesheet" href="../css/rate.css">
+    <link rel="stylesheet" href="../js/select/selectivity.min.css">
+    <link rel="stylesheet" href="../js/select/selectivity-jquery.css">
+
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="container-fluid navbar_inner">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-2 navbar_cell first_title"><a href="#" class="navbar_option">Главная</a></div>
+                    <div class="col-xs-12 col-sm-2 navbar_cell"><div class="option_wrapper"><a href="#" class="navbar_option">О нас</a></div></div>
+                    <div class="col-xs-12 col-sm-2 navbar_cell"><div class="option_wrapper"><a href="#" class="navbar_option">Рейтинги</a></div></div>
+                    <div class="col-xs-12 col-sm-2 navbar_cell"><div class="option_wrapper"><a href="#" class="navbar_option">Публикации</a></div></div>
+                    <div class="col-xs-12 col-sm-2 navbar_cell"><div class="option_wrapper"><a href="#" class="navbar_option">Новости</a></div></div>
+                    <div class="col-xs-12 col-sm-2 navbar_cell last_title"><div class="option_wrapper"><a href="#" class="navbar_option">База</a></div></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ТОГГЛЕРЫ -->
+    <div class="container-fluid cont-options">
+        <div class="row">
+            <div class=" col-lg-2">
+                <div class="btn-group">
+                    <button type="button" class="header_text btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Итоговый рейтинг <span class="">
+                    <img src="../images/arrow.png" alt="" class="angle">
+                </span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="btn-group year">
+                <button type="button" class="header_text btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    2015
+                    <span class="">
+                <img src="../images/arrow.png" alt="" class="angle">
+            </span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 ">
+                <div class="input-group search">
+                  <span class="input-group-btn">
+                    <button class="search-button" type="button">
+                        <img src="../images/glass.png" alt="" class="search-img">
+                    </button>
+                  </span>
+                  <input type="text" class="search-input" placeholder="Поиск по компании" >
+                </div><!-- /input-group -->
+            </div>
+            <div class="col-lg-1 col-lg-offset-5 lang-wrapper">
+                <div class="lang">
+                    <span class="lang-selected">рус</span>
+                    <span class="gray">/</span>
+                    <span class="lang-inactive">eng</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="headers">
+       <!--     <div class="row">-->
+                <div class="col-lg-2 col-md-12">
+                    <div class="header_text">Отрасль</div>
+                    <div id="example-1" class="selectivity-input example-input" tabindex="0">
+                        <div class="selectivity-single-select">
+                            <input class="selectivity-single-select-input" type="text">
+                            <div class="selectivity-single-result-container">
+                                <div class="selectivity-placeholder">No city selected</div>
+                            </div><i class="fa fa-sort-desc selectivity-caret"></i>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-10 col-md-12 center-on-phone">
+                    <div class="header_text category">Категория</div>
+                    <div class="row categ-row-wrapper">
+
+                        <div class="col-md-6 col-lg-4 togglers">
+                            <div class="category toggle-name">
+                                <div class="toggle-inner">
+                                    <div class="categ-wrapper">
+                                        <span class="categ-wrap-inner">
+                                        <p class="categ ">системообразующая</p>
+                                        </span>
+                                        <div class="gray-block toggle-name">
+                                            <div class="white-block"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="categ-wrapper">
+                                    <p class="categ ">листингуемые</p>
+                                    <div class="gray-block toggle-name">
+                                        <div class="white-block"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-6 col-lg-4 right-categ">
+                            <div class="category toggle-name right-bar">
+                                <div class="categ-wrapper">
+                                    <p class="categ">государственные</p>
+                                    <div class="gray-block toggle-name righter-block">
+                                        <div class="white-block"></div>
+                                    </div>
+                                </div>
+                                <div class="categ-wrapper">
+                                    <p class="categ">частные</p>
+                                    <div class="gray-block toggle-name righter-block">
+                                        <div class="white-block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid general-categ-wrapper">
+        </div>
+    </div>
+    <!-- 1-200  ПЕРЕКЛЮЧАЛКИ -->
+   <!-- <div class="rating-toggle">
+            <div class="range-wrapper">
+                <div class="range active-range" id="first">1-20</div>
+                <div class="range" id="second">21-40</div>
+                <div class="range" id="third">41-60</div>
+                <div class="range" id="fourth">61-80</div>
+                <div class="range" id="fifth">81-100</div>
+                <div class="range" id="sixth">101-120</div>
+                <div class="range" id="seventh">121-140</div>
+                <div class="range" id="eighth">141-160</div>
+                <div class="range" id="ninth"> 161-180</div>
+                <div class="range" id="tenth">181-200</div>
+            </div>
+    </div>-->
+
+
+    <!-- РЕЙТИНГ -->
+        <div class="rating-wrapper">
+            <div class="container-fluid">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                                <p class="company-name">
+                                    "Глобус Медиа Груп"
+                                </p>
+                                <div class="num-in-rating">1</div>
+
+
+                            <div class="attention">
+                                <img src="../images/attention.png" alt="!" class="attention-image">
+                                <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/iii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">94,18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Компания "Ромашка"
+                            </p>
+                            <div class="num-in-rating">2</div>
+
+
+                            <div class="attention ">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/downgrade.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">92,16</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Холдинг "Энергетика Мира"
+                            </p>
+                            <div class="num-in-rating">3</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">90,18</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                ООО "Технологии победы"
+                            </p>
+                            <div class="num-in-rating">4</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                <span class="inactive">
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/iii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/downgrade.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">90,01</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Компания "Ромашка"
+                            </p>
+                            <div class="num-in-rating">5</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                <img src="../images/attention.png" alt="!" class="attention-image">
+                                <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">89,31</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Холдинг "Энергетика Мира"
+                            </p>
+                            <div class="num-in-rating">6</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">87,66</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                "Глобус Медиа Груп"
+                            </p>
+                            <div class="num-in-rating">7</div>
+
+
+                            <div class="attention">
+                                <img src="../images/attention.png" alt="!" class="attention-image">
+                                <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/iii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/downgrade.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">84,17</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Компания "Ромашка"
+                            </p>
+                            <div class="num-in-rating">8</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/downgrade.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">72,11</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Холдинг "Энергетика Мира"
+                            </p>
+                            <div class="num-in-rating">9</div>
+
+
+                            <div class="attention">
+                                <img src="../images/attention.png" alt="!" class="attention-image">
+                                <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">66,53</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                "Глобус Медиа Груп"
+                            </p>
+                            <div class="num-in-rating">1</div>
+
+
+                            <div class="attention">
+                                <img src="../images/attention.png" alt="!" class="attention-image">
+                                <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/iii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">94,18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Компания "Ромашка"
+                            </p>
+                            <div class="num-in-rating">2</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                <img src="../images/attention.png" alt="!" class="attention-image">
+                                <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/downgrade.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">92,16</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Холдинг "Энергетика Мира"
+                            </p>
+                            <div class="num-in-rating">3</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">90,18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                ООО "Технологии победы"
+                            </p>
+                            <div class="num-in-rating">4</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/iii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/downgrade.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">90,01</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Компания "Ромашка"
+                            </p>
+                            <div class="num-in-rating">5</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">89,31</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Холдинг "Энергетика Мира"
+                            </p>
+                            <div class="num-in-rating">6</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">87,66</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                "Глобус Медиа Груп"
+                            </p>
+                            <div class="num-in-rating">1</div>
+
+
+                            <div class="attention">
+                                <img src="../images/attention.png" alt="!" class="attention-image">
+                                <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/iii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">94,18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Компания "Ромашка"
+                            </p>
+                            <div class="num-in-rating">2</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/downgrade.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">92,16</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Холдинг "Энергетика Мира"
+                            </p>
+                            <div class="num-in-rating">3</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">90,18</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                ООО "Технологии победы"
+                            </p>
+                            <div class="num-in-rating">4</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/iii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/downgrade.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">90,01</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Компания "Ромашка"
+                            </p>
+                            <div class="num-in-rating">5</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">89,31</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Холдинг "Энергетика Мира"
+                            </p>
+                            <div class="num-in-rating">6</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">87,66</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                "Глобус Медиа Груп"
+                            </p>
+                            <div class="num-in-rating">7</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/iii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/downgrade.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">84,17</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Компания "Ромашка"
+                            </p>
+                            <div class="num-in-rating">8</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/downgrade.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">72,11</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Холдинг "Энергетика Мира"
+                            </p>
+                            <div class="num-in-rating">9</div>
+
+
+                            <div class="attention">
+                                <img src="../images/attention.png" alt="!" class="attention-image">
+                                <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">66,53</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                "Глобус Медиа Груп"
+                            </p>
+                            <div class="num-in-rating">1</div>
+
+
+                            <div class="attention">
+                                <img src="../images/attention.png" alt="!" class="attention-image">
+                                <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/iii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">94,18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Компания "Ромашка"
+                            </p>
+                            <div class="num-in-rating">2</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/downgrade.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">92,16</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Холдинг "Энергетика Мира"
+                            </p>
+                            <div class="num-in-rating">3</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">90,18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                ООО "Технологии победы"
+                            </p>
+                            <div class="num-in-rating">4</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/iii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/downgrade.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">90,01</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Компания "Ромашка"
+                            </p>
+                            <div class="num-in-rating">5</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">89,31</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="cell-wrapper">
+
+                            <p class="company-name">
+                                Холдинг "Энергетика Мира"
+                            </p>
+                            <div class="num-in-rating">6</div>
+
+
+                            <div class="attention">
+                                <span class="inactive">
+                                    <img src="../images/attention.png" alt="!" class="attention-image">
+                                    <p class="attention-text">Отчет загружен <br> с опозданием</p>
+                                </span>
+                            </div>
+                            <div class="num-of-category">
+                                <img src="../images/ii.png" alt="III" class="num-of-category-inner">
+                            </div>
+                            <div class="score">
+                                <img src="../images/promote.png" alt="Позиция укрепилась" class="up-down">
+                                <p class="score-inner">87,66</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid footer-inner">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="author">&copy; 2017 Да— Стратегия</div>
+                    <div class="media_wrapper">
+                        <!--<a href="#" class="media connection">Обратная связь</a>-->
+                        <a href="#" class="media">
+                            <img src="../images/fb.png" alt="" class="social-loco">
+                        </a>
+                        <a href="#" class="media">
+                            <img src="../images/vk.png" alt="" class="social-loco">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   <!-- <form class="navbar-form navbar-left">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://use.fontawesome.com/7b8cae45d5.js"></script>
+<script src="../js/select/selectivity-jquery.js"></script>
+<script src="../js/script-rate.js"></script>
+</body>
+</html>

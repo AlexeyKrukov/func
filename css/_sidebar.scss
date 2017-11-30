@@ -1,0 +1,46 @@
+$white: #fff;
+$red: #BB2028;
+$dark-gray: #9D9E9D;
+
+.text_about {
+  text-align: justify;
+  display: inline-block;
+  color: $dark-gray;
+  max-width: 485px;
+  font-size: 17px;
+}
+.sidebar_wrapper {
+  padding-left: 0;
+}
+.content_center {
+  max-width: 1820px;
+  margin: 0 auto;
+}
+ul.slick-dots li button:before {
+  font-size: 0;
+  color: #fff;
+  border: 2px solid $dark-gray;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: white;
+  padding: 1px;
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+  background-color: $dark-gray;
+  opacity: 1;
+}
+.clear-fix {
+  clear: both;
+}
+.slick-dots {
+  text-align: left;
+}
+.bonus-text {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}

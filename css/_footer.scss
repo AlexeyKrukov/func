@@ -1,0 +1,60 @@
+$bg: #aeaeae;
+$white: #fff;
+
+.author {
+  // Author of this page Alexandr Sakharoff
+  display: inline-block;
+  text-align: left;
+  color: $white;
+}
+.media, .media:hover, .media:focus, .media:active, .media:visited {
+  text-decoration: none;
+  color: $white;
+}
+.media_wrapper {
+  display: inline-block;
+}
+footer {
+  background-color: $bg;
+  padding: 13px 0;
+  font-size: 17px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+footer span {
+  color: $white;
+}
+footer .container {
+  padding: 0;
+  .row {
+    max-width: 1020px;
+    margin: 0 auto;
+    .col-xs-12 {
+      padding: 0;
+    }
+  }
+}
+.media_wrapper{
+  float: right;
+
+}
+/*.media:first-of-type {
+  margin-right: 50px;
+}*/
+.footer-inner {
+  max-width: 1820px;
+  margin: 0 auto;
+}
+.social-loco {
+  width: 26px;
+  border-radius: 21%;
+  margin-right: 22px;
+}
+.connection {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,134 @@
+$proxima: "ProximaNova", "Arial", sans-serif;
+
+body {
+  font-family: $proxima;
+}
+.img-news {
+  width: 400px;
+  margin: 0 auto;
+  height: 290px;
+}
+
+.news-block {
+
+}
+.col4-767px {
+  width: 33.33333%;
+}
+.col8-767px {
+  width: 66.66666%;
+}
+.news-header {
+    font-size: 19px;
+    font-family: $proxima;
+    line-height: 1.5;
+    a{
+      font-weight: 700;
+      color: rgb(35, 31, 32);
+      &:focus,
+      &:active,
+      &:hover {
+        color: rgb(35, 31, 32);
+      }
+    }
+}
+.first-block, .second-block, .third-block {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 115px;
+  margin-bottom: 80px;
+}
+.second-block, .third-block {
+  margin-top: 0;
+}
+
+.news-date-text {
+    font-size: 17px;
+    color: rgb(187, 32, 40);
+    line-height: 2.455;
+}
+.news-date {
+  width: 16px;
+  padding-bottom: 5px;
+}
+.main-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.img-news {
+
+}
+.news-common {
+    font-size: 17px;
+    color: rgb(157, 158, 157);
+    -moz-transform: matrix( 1.35306553911205,0,0,1.35348837209302,0,0);
+    -webkit-transform: matrix( 1.35306553911205,0,0,1.35348837209302,0,0);
+    -ms-transform: matrix( 1.35306553911205,0,0,1.35348837209302,0,0);
+    line-height: 1;
+    &:focus,
+    &:active,
+    &:hover {
+      color: rgb(157, 158, 157);
+    }
+}
+.data-img {
+  margin-bottom: 16px;
+}
+.read-news {
+  display: block;
+}
+.news-date-text.read-news {
+    &:hover,
+    &:focus,
+    &:active {
+      color: rgb(187, 32, 40);
+    }
+}
+.row {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+footer {
+  position: absolute;
+  bottom: inherit;
+}
+.lang {
+  margin-top: -40px;
+}
+
+
+@media all and (min-width: 992px) {
+  .news-content {
+    margin-top: -233px;
+  }
+}
+
+@media all and (max-width: 1650px) {
+  .img-news {
+    padding-left: 20px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .img-news {
+    margin-top: 20px;
+  }
+  .img-news {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding-left: 0;
+  }
+  .collapse.in {
+     display: block ;
+  }
+
+.navbar-collapse.collapse {
+  display: none;
+}
+
+}
+
+

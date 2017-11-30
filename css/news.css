@@ -1,0 +1,156 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\000033}}
+body {
+  font-family: "ProximaNova", "Arial", sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\000036}}
+.img-news {
+  width: 400px;
+  margin: 0 auto;
+  height: 290px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000315}}
+.col4-767px {
+  width: 33.33333%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000318}}
+.col8-767px {
+  width: 66.66666%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000321}}
+.news-header {
+  font-size: 19px;
+  font-family: "ProximaNova", "Arial", sans-serif;
+  line-height: 1.5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000325}}
+.news-header a {
+  font-weight: 700;
+  color: #231f20;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000328}}
+.news-header a:focus, .news-header a:active, .news-header a:hover {
+  color: #231f20;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000335}}
+.first-block, .second-block, .third-block {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 115px;
+  margin-bottom: 80px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000341}}
+.second-block, .third-block {
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000345}}
+.news-date-text {
+  font-size: 17px;
+  color: #bb2028;
+  line-height: 2.455;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000350}}
+.news-date {
+  width: 16px;
+  padding-bottom: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000354}}
+.main-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000361}}
+.news-common {
+  font-size: 17px;
+  color: #9d9e9d;
+  -moz-transform: matrix(1.3530655391, 0, 0, 1.3534883721, 0, 0);
+  -webkit-transform: matrix(1.3530655391, 0, 0, 1.3534883721, 0, 0);
+  -ms-transform: matrix(1.3530655391, 0, 0, 1.3534883721, 0, 0);
+  line-height: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000368}}
+.news-common:focus, .news-common:active, .news-common:hover {
+  color: #9d9e9d;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000374}}
+.data-img {
+  margin-bottom: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000377}}
+.read-news {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000381}}
+.news-date-text.read-news:hover, .news-date-text.read-news:focus, .news-date-text.read-news:active {
+  color: #bb2028;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000387}}
+.row {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000393}}
+footer {
+  position: absolute;
+  bottom: inherit;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\0000397}}
+.lang {
+  margin-top: -40px;
+}
+
+@media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\00003103}}
+  .news-content {
+    margin-top: -233px;
+  }
+}
+@media all and (max-width: 1650px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\00003109}}
+  .img-news {
+    padding-left: 20px;
+  }
+}
+@media all and (max-width: 991px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\00003115}}
+  .img-news {
+    margin-top: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\00003118}}
+  .img-news {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding-left: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\00003124}}
+  .collapse.in {
+    display: block;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/myFirstPHPServer\/OSPanel\/domains\/mvp2\/css\/news\.scss}line{font-family:\00003128}}
+  .navbar-collapse.collapse {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=news.css.map */
