@@ -181,34 +181,32 @@
                     kind: 'all'
                 },
                 success: function(data){
-                    //alert("yes")
                     d=JSON.parse(data)
-                    $('.news_area').append(d[0].date)
             //--------------------------------Content-----------------------------------------
                     if(d.length == 1)
                         $('.news_area').append(d[d.length - 1].text)
                     else {
                         $('.news_area').append(d[d.length - 1].text)
                         //alert(d[d.length - 1].text)
-                        for(var i = d.length - 4; i < d.length - 2; i++){
+                        for(var i = d.length - 3; i < d.length - 1; i++){
                            //$('.sider_news').append(d[d.length - 1].text) 
                             var header = "<div class=\"slider-news\"> <div class=\"data-img\">" +
                             "<img src=" + d[i].img + "alt=\"Дата: \" class=\"news-date\">" +
                             "<span class=\"news-date-text\">" + d[i].date + "</span></div>"
                             //alert(header);
                             var link = "<a class=\"link\">" +
-                            "<img src=" + images/pubs1.jpg + " alt="" class=\"img-pubs\">"+
+                            "<img src= images/pubs1.jpg alt= \"smf\" class=\"img-pubs\">"+
                             "<div class=\"other-sub-head\">" + d[i].text + "</div></a>"
                             var authors = "<div class=\"authors\">" +
-                            "<img src=" + images/authors.png + " alt="">" + 
+                            "<img src= images/authors.png alt=\"smf\">" + 
                             d[i].author + "</div>" + 
                             "<a href=\"#\" class=\"read-news news-date-text\">Читать статью</a>" + 
                             "</div>"
-                            $('.sider_news').append(header + link + authors); 
-                        }
+                            $('.sider_news').append(header + link + authors);
+                        } 
                     }
-                }
-            })
+                        }
+                    })
         })
     </script>
 </body>
