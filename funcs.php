@@ -7,14 +7,19 @@
 
     $link = mysqli_connect(MYSQL_SERVER, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB) or die("Connection failed");
     if(isset($_GET['need']) && isset($_GET['kind'])){
-      $st = get_news($link, $_GET['kind']);
-        echo $st;
-        //return $st;
+        if($_GET['kind'] == "news"){
+            $st = get_news($link, $_GET['kind']);
+            echo $st;
+        }
+       else{
+        $st = get_publications($link, $_GET['kind']);
+        echo $st; 
+        }
     }
-    if($_GET["publications"]){
-        $result = get_publications($link, "all");
-        echo $result;
-    }
+    //if($_GET["publications"]){
+      //  $result = get_publications($link, "all");
+        //echo $result;
+    //}
     function get_news($link, $kind){
         if(is_numeric($kind)){
             $query = htmlentities("SELECT * FROM news WHERE id = ?");

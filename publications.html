@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!--  <link rel="stylesheet" href="../css/style.css">-->
+    <link rel="stylesheet" href="css/rate.css">
+    <link rel="stylesheet" href="js/select/selectivity.min.css">
+    <link rel="stylesheet" href="js/select/selectivity-jquery.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/pub.css">
+</head>
+<body>
+<div class="pub-wrapp">
+
+    <nav class="navbar">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="container-fluid navbar_inner">
+                <div class="row">
+                    <div class="col-xs-12 col-md-2 navbar_cell first_title"><a href="#" class="navbar_option">Главная</a></div>
+                    <div class="col-xs-12 col-md-2 navbar_cell"><div class="option_wrapper"><a href="#" class="navbar_option">О нас</a></div></div>
+                    <div class="col-xs-12 col-md-2 navbar_cell"><div class="option_wrapper"><a href="#" class="navbar_option">Рейтинги</a></div></div>
+                    <div class="col-xs-12 col-md-2 navbar_cell"><div class="option_wrapper"><a href="#" class="navbar_option">Публикации</a></div></div>
+                    <div class="col-xs-12 col-md-2 navbar_cell"><div class="option_wrapper"><a href="#" class="navbar_option">Новости</a></div></div>
+                    <div class="col-xs-12 col-md-2 navbar_cell last_title"><div class="option_wrapper"><a href="#" class="navbar_option">База</a></div></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main-slide">
+        <img src="images/building.jpeg" alt="" class="img-main">
+        <div class="main-slide-text">
+            Состояние прозрачности <br>
+            крупнейших российских компаний <br>
+             в 2016 году
+        </div>
+        <div class="data-img">
+            <img src="images/notebook.png" alt="Дата: " class="news-date">
+            <span class="news-date-text">6  ноября 2017</span>
+        </div>
+    </div>
+    <div class="container-fluid pub-main">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class = "news_area">
+                <!--<p class="pub-info">I. 217 компаний из 855 обследованных (25,4%) раскрывают отчетную информацию,
+                    руководствуясь только требованиями Центрального Банка РФ (IV уровень прозрачности).
+                    Как правило, публичная отчетность этих компаний представляет собой документ,
+                    оформленный в текстовом формате без инфографики (диаграммы, графики,
+                    схемы, карты и пр.). Подобные отчеты как правило размещаются на специализированныхсайтах раскрытия информации
+                    (ЗАО «АК&М», АНО «АЗИПИ», ЗАО «Интерфакс», ЗАО «Прайм-ТАСС», ЗАО «СКРИН»).</p>
+                <p class="pub-info">II. Значительная часть крупнейших компаний РФ, а именно 424 из 855 (49,5%), являются непрозрачными (V (нулевой) уровень прозрачности).
+                    Эти компании не раскрывают отчетную информацию о своей деятельности посредством публичной отчетности.
+                    В числе этих компаний 47 ОАО и ПАО (41 компания из повторно участвующих в рейтинге).</p>
+                <p class="pub-info">
+                    III. 30 компаний из 855 обследованных (3,5%) не считают для себя возможным публиковать
+                    отчетность на русском языке (нет соответствия уровням прозрачности).
+                </p>
+                <p class="pub-info">
+                    IV. Наблюдается небольшое снижение коэффициентов прозрачности различных секторов экономики РФ.
+                    В среднем коэффициент прозрачности снизился на 0,18 балла. Наибольшее падение наблюдается в таких секторах, как «Пищевая промышленность», «Атомная промышленность» (причина - структурные преобразования в атомной отрасли, а не снижение уровня прозрачности), «Сервисные компании». Коэффициент прозрачности повысился в секторах «Угольная промышленность», «Промышленность драгоценных металлов и алмазов», «Транспорт».
+                </p>
+                <p class="pub-info">
+                    V. Наиболее прозрачными остаются компании, представляющие «Атомную промышленность», «Промышленность драгоценных металлов и алмазов» и «Электроэнергетику». Аутсайдерами корпоративной прозрачности являются компании секторов «Информационные технологии», «Розничная торговля», «Оптовая торговля».
+                </p>
+                <p class="pub-info">
+                    VI. Наблюдается поляризация прозрачности: компании-лидеры становятся все более прозрачными, остальные компании прозрачность не повышают, тем самым все сильнее становится разрыв между лидерами и основной массой компаний.
+                </p>
+                <p class="pub-info">
+                    VII. Биржи являются одним из институциональных факторов, стимулирующих повышение корпоративной прозрачности.
+                </p>
+                <p class="pub-info">
+                    VIII. Законодательные требования являются одним из ключевых факторов, стимулирующих развитие корпоративной прозрачности.
+                </p>
+                <p class="pub-info">
+                    IX. Высокая прозрачность непубличных компаний перестала быть исключением.
+                </p>
+                <p class="pub-info">
+                    X. Прозрачные компании имеют более высокие кредитные рейтинги, чем непрозрачные.
+                </p>
+                <p class="pub-info">
+                    XI. Корпоративная прозрачность системообразующих организаций, формирующих более 70 % совокупного национального дохода, остается весьма низкой.
+                </p>
+                <p class="pub-info">
+                    С более подробной информацией можно ознакомиться в итоговом докладе Ежегодного национального исследования «Корпоративная прозрачность крупнейших российских компаний – 2016»»
+                </p>-->
+                </div>
+                <div class="show-more">
+                    <a href="#">
+                        <img src="images/next.png" alt="">
+                        Подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3 sider sider_news">
+                <div class="other-head">Другие публикации</div>
+                <!--<div class="slider-news">
+                        <div class="data-img">
+                            <img src="images/notebook.png" alt="Дата: " class="news-date">
+                            <span class="news-date-text">6  ноября 2017</span>
+                        </div>
+                    <a class="link">
+                        <img src="images/pubs1.jpg" alt="" class="img-pubs">
+                        <div class="other-sub-head">Методы фондовых бирж  по усилению социальной  ориентации компаний </div>
+                    </a>
+                    <div class="authors">
+                        <img src="images/authors.png" alt="">
+                        Авторы: Е. Киселева, Д. Краснов
+                    </div>
+                    <a href="#" class="read-news news-date-text">Читать статью</a>
+                </div>
+                <div class="slider-news">
+                    <div class="data-img">
+                        <img src="images/notebook.png" alt="Дата: " class="news-date">
+                        <span class="news-date-text">6  ноября 2017</span>
+                    </div>
+                    <a class="link">
+                        <img src="images/pubs1.jpg" alt="" class="img-pubs">
+                        <div class="other-sub-head">Снижение  коэффициентов  прозрачности различных  секторов экономики РФ </div>
+                    </a>
+                    <div class="authors">
+                        <img src="images/authors.png" alt="">
+                        Авторы: Е. Киселева, Д. Краснов
+                    </div>
+                    <a href="#" class="read-news news-date-text">Читать статью</a>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FOOTER -->
+<footer>
+    <div class="container-fluid footer-inner">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="author">&copy; 2017 Да— Стратегия</div>
+                <div class="media_wrapper">
+                   <a href="#" class="media connection">Обратная связь</a>
+                    <a href="#" class="media">
+                        <img src="images/fb.png" alt="" class="social-loco">
+                    </a>
+                    <a href="#" class="media">
+                        <img src="images/vk.png" alt="" class="social-loco">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://use.fontawesome.com/7b8cae45d5.js"></script>
+<script src="js/select/selectivity-jquery.js"></script>
+<script src="js/script-rate.js"></script>
+<script>
+        $(document).ready(function(){
+            $.ajax({
+                url: "funcs.php",
+                type: "GET",
+                data:{
+                    need: 'publications',
+                    kind: 'all'
+                },
+                success: function(data){
+                    //alert("yes")
+                    d=JSON.parse(data)
+                    $('.news_area').append(d[0].date)
+            //--------------------------------Content-----------------------------------------
+                    if(d.length == 1)
+                        $('.news_area').append(d[d.length - 1].text)
+                    else {
+                        $('.news_area').append(d[d.length - 1].text)
+                        //alert(d[d.length - 1].text)
+                        for(var i = d.length - 4; i < d.length - 2; i++){
+                           //$('.sider_news').append(d[d.length - 1].text) 
+                            var header = "<div class=\"slider-news\"> <div class=\"data-img\">" +
+                            "<img src=" + d[i].img + "alt=\"Дата: \" class=\"news-date\">" +
+                            "<span class=\"news-date-text\">" + d[i].date + "</span></div>"
+                            //alert(header);
+                            var link = "<a class=\"link\">" +
+                            "<img src=" + images/pubs1.jpg + " alt="" class=\"img-pubs\">"+
+                            "<div class=\"other-sub-head\">" + d[i].text + "</div></a>"
+                            var authors = "<div class=\"authors\">" +
+                            "<img src=" + images/authors.png + " alt="">" + 
+                            d[i].author + "</div>" + 
+                            "<a href=\"#\" class=\"read-news news-date-text\">Читать статью</a>" + 
+                            "</div>"
+                            $('.sider_news').append(header + link + authors); 
+                        }
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+</html>

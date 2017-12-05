@@ -40,7 +40,90 @@
             <span class="gray">/</span>
             <span class="lang-inactive">eng</span>
         </div>
-    <div class = "area_for_news"></div>
+        <div class="news-block first-block">
+            <div class="row">
+                <div class="col-md-8 col-md-push-4">
+                    <div class="news-header">
+                        <a href="#">
+                            Интегрированные отчеты за 2016 год загружены в базу<br>
+                            Национального реестра интегрированных отчетов
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-pull-8">
+                    <img src="images/news1.png" alt="Изображение новости" class="img-responsive img-news">
+                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-4 news-content">
+                <div class="data-img">
+                    <img src="images/notebook.png" alt="Дата: " class="news-date">
+                    <span class="news-date-text">8  ноября 2017</span>
+                </div>
+                <a href="#" class="news-common">
+                    В базу Национального реестра интегрированных отчетов загружены интегрированные
+                    отчеты российских компаний. Всего в России за 2016
+                    год было выпущено 15 интегрированных отчетов, подготовленных
+                    в соответствии с рекомендациями Международного совета по интегрированной отчетности.
+                </a>
+                <a href="#" class="read-news news-date-text">Далее...</a>
+            </div>
+        </div>
+        <div class="news-block second-block">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="news-header">
+                        <a href="#">
+                            Опубликованы результаты ежегодного исследования отчетов<br>
+                            европейских компаний
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/news2.png" alt="Изображение новости" class="img-responsive img-news">
+                </div>
+            </div>
+            <div class="col-md-8 news-content">
+                <div class="data-img">
+                    <img src="images/notebook.png" alt="Дата: " class="news-date">
+                    <span class="news-date-text">6  ноября 2017</span>
+                </div>
+                <a href="#" class="news-common">
+                    Итальянская компания Message Group опубликовала результаты исследования трендов отчетности.
+                    В ходе исследования специалистами были проанализированы отчеты 800 компаний из 25 стран
+                    Европы. Основной вывод исследования заключается в том, что главным трендом отчетности
+                    европейских компаний является «интеграция и лаконичность».
+                </a>
+                <a href="#" class="read-news news-date-text">Далее...</a>
+            </div>
+        </div>
+        <div class="news-block third-block">
+            <div class="row">
+                <div class="col-md-8 col-md-push-4">
+                    <div class="news-header">
+                        <a href="#">
+                            24 ноября пройдет XIV Ежегодная практическая конференция «Годовые отчеты: <br>опыт лидеров и новые стандарты»,
+                            организуемая рейтинговым агентством RAEX
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-pull-8">
+                    <img src="images/news3.png" alt="Изображение новости" class="img-responsive img-news">
+                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-4 news-content">
+                <div class="data-img">
+                    <img src="images/notebook.png" alt="Дата: " class="news-date">
+                    <span class="news-date-text">6  ноября 2017</span>
+                </div>
+                <a href="#" class="news-common">
+                    Победители будут определяться в номинациях «Лучший годовой отчет»,
+                    «Дизайн и полиграфия», «Лучший интерактивный годовой отчет». Среди
+                    дополнительных номинаций учреждена новая – «Лучший интегрированный отчет». Номинация
+                    учреждена при поддержке Российской Региональной Сети по интегрированной отчетности.
+                </a>
+                <a href="#" class="read-news news-date-text">Далее...</a>
+            </div>
+        </div>
     </div>
     <!-- FOOTER -->
     <footer>
@@ -49,7 +132,7 @@
                 <div class="col-xs-12">
                     <div class="author">&copy; 2017 Да— Стратегия</div>
                     <div class="media_wrapper">
-                        <a href="#" class="media connection">Обратная связь</a>
+                        <!--<a href="#" class="media connection">Обратная связь</a>-->
                         <a href="#" class="media">
                             <img src="../images/fb.png" alt="" class="social-loco">
                         </a>
@@ -76,227 +159,5 @@
     <script src="https://use.fontawesome.com/7b8cae45d5.js"></script>
     <script src="js/select/selectivity-jquery.js"></script>
     <script src="js/script-rate.js"></script>
-    <script type="text/javascript">
-$(document).ready(function(){
-    $.ajax({
-        url: "funcs.php",
-        type: "GET",
-        data:{
-            need: 'news',
-            kind: 'all'
-        },
-        success: function(data){
-            alert(data);
-            d = JSON.parse(data);
-            alert(d.length);
-            if(d.length == undefined){
-                if ($('.area_for_news').is(':empty')) {
-                    alert("yes");
-                    $('.area_for_news').append(
-            "<div class=\"news-block first-block\">" +
-                "<div class=\"row\">" +
-                    "<div class=\"col-md-8 col-md-push-4\">" +
-                        "<div class=\"news-header\">" +
-                        "<a href=\"#\">" + d.text + "</a>" +
-                    "</div>" +
-                "</div>" +
-                "<div class=\"col-md-4 col-md-pull-8\">" +
-                    "<img src=" + d.img + "alt=\"Изображение новости\" class=\"img-responsive img-news\">" +
-                "</div>" +
-            "</div>" +
-            "<div class=\"col-md-8 col-md-offset-4 news-content\">" +
-                "<div class=\"data-img\">" +
-                    "<img src=\"images/notebook.png\" alt=\"Дата: \" class=\"news-date\">" +
-                    "<span class=\"news-date-text\">" + d.date + "</span>" +
-                "</div>" +
-                "<a href=\"#\" class=\"news-common\">" + d.text + "</a>" +
-                "<a href=\"#\" class=\"read-news news-date-text\">Далее...</a>" +
-            "</div>" +
-            "</div>"
-                );
-                return;
-            }
-            else $('.area_for_news').append(
-            "<div class=\"news-block\">" +
-                "<div class=\"row\">" +
-                    "<div class=\"col-md-8 col-md-push-4\">" +
-                        "<div class=\"news-header\">" +
-                        "<a href=\"#\">" + d.text + "</a>" +
-                    "</div>" +
-                "</div>" +
-                "<div class=\"col-md-4 col-md-pull-8\">" +
-                    "<img src=" + d.img + "alt=\"Изображение новости\" class=\"img-responsive img-news\">" +
-                "</div>" +
-            "</div>" +
-            "<div class=\"col-md-8 col-md-offset-4 news-content\">" +
-                "<div class=\"data-img\">" +
-                    "<img src=\"images/notebook.png\" alt=\"Дата: \" class=\"news-date\">" +
-                    "<span class=\"news-date-text\">" + d.date + "</span>" +
-                "</div>" +
-                "<a href=\"#\" class=\"news-common\">" + d.text + "</a>" +
-                "<a href=\"#\" class=\"read-news news-date-text\">Далее...</a>" +
-            "</div>" +
-            "</div>"
-                );
-                return;
-            }
-         else if(d.length == 3){
-             if ($('.area_for_news').is(':empty')) {
-                    alert("yes");
-                    $('.area_for_news').append(
-            "<div class=\"news-block first-block\">" +
-                "<div class=\"row\">" +
-                    "<div class=\"col-md-8 col-md-push-4\">" +
-                        "<div class=\"news-header\">" +
-                        "<a href=\"#\">" + d[0].text + "</a>" +
-                    "</div>" +
-                "</div>" +
-                "<div class=\"col-md-4 col-md-pull-8\">" +
-                    "<img src=" + d[0].img + "alt=\"Изображение новости\" class=\"img-responsive img-news\">" +
-                "</div>" +
-            "</div>" +
-            "<div class=\"col-md-8 col-md-offset-4 news-content\">" +
-                "<div class=\"data-img\">" +
-                    "<img src=\"images/notebook.png\" alt=\"Дата: \" class=\"news-date\">" +
-                    "<span class=\"news-date-text\">" + d[0].date + "</span>" +
-                "</div>" +
-                "<a href=\"#\" class=\"news-common\">" + d[0].text + "</a>" +
-                "<a href=\"#\" class=\"read-news news-date-text\">Далее...</a>" +
-            "</div>" +
-            "</div>"
-                );
-                 for(let i = 1; i < 3; i++){
-             $('.area_for_news').append(
-            "<div class=\"news-block\">" +
-                "<div class=\"row\">" +
-                    "<div class=\"col-md-8 col-md-push-4\">" +
-                        "<div class=\"news-header\">" +
-                        "<a href=\"#\">" + d[i].text + "</a>" +
-                    "</div>" +
-                "</div>" +
-                "<div class=\"col-md-4 col-md-pull-8\">" +
-                    "<img src=" + d[i].img + "alt=\"Изображение новости\" class=\"img-responsive img-news\">" +
-                "</div>" +
-            "</div>" +
-            "<div class=\"col-md-8 col-md-offset-4 news-content\">" +
-                "<div class=\"data-img\">" +
-                    "<img src=\"images/notebook.png\" alt=\"Дата: \" class=\"news-date\">" +
-                    "<span class=\"news-date-text\">" + d[i].date + "</span>" +
-                "</div>" +
-                "<a href=\"#\" class=\"news-common\">" + d[i].text + "</a>" +
-                "<a href=\"#\" class=\"read-news news-date-text\">Далее...</a>" +
-            "</div>" +
-            "</div>");
-                    }
-                return;
-            }
-             else {
-                 for(let i = 0; i < 3; i++){
-             $('.area_for_news').append(
-            "<div class=\"news-block\">" +
-                "<div class=\"row\">" +
-                    "<div class=\"col-md-8 col-md-push-4\">" +
-                        "<div class=\"news-header\">" +
-                        "<a href=\"#\">" + d[i].text + "</a>" +
-                    "</div>" +
-                "</div>" +
-                "<div class=\"col-md-4 col-md-pull-8\">" +
-                    "<img src=" + d[i].img + "alt=\"Изображение новости\" class=\"img-responsive img-news\">" +
-                "</div>" +
-            "</div>" +
-            "<div class=\"col-md-8 col-md-offset-4 news-content\">" +
-                "<div class=\"data-img\">" +
-                    "<img src=\"images/notebook.png\" alt=\"Дата: \" class=\"news-date\">" +
-                    "<span class=\"news-date-text\">" + d[i].date + "</span>" +
-                "</div>" +
-                "<a href=\"#\" class=\"news-common\">" + d[i].text + "</a>" +
-                "<a href=\"#\" class=\"read-news news-date-text\">Далее...</a>" +
-            "</div>" +
-            "</div>");
-                    }
-                 return;
-             }
-        }
-        else {
-            if ($('.area_for_news').is(':empty')) {
-                    alert("yes");
-                    $('.area_for_news').append(
-            "<div class=\"news-block first-block\">" +
-                "<div class=\"row\">" +
-                    "<div class=\"col-md-8 col-md-push-4\">" +
-                        "<div class=\"news-header\">" +
-                        "<a href=\"#\">" + d[0].text + "</a>" +
-                    "</div>" +
-                "</div>" +
-                "<div class=\"col-md-4 col-md-pull-8\">" +
-                    "<img src=" + d[0].img + "alt=\"Изображение новости\" class=\"img-responsive img-news\">" +
-                "</div>" +
-            "</div>" +
-            "<div class=\"col-md-8 col-md-offset-4 news-content\">" +
-                "<div class=\"data-img\">" +
-                    "<img src=\"images/notebook.png\" alt=\"Дата: \" class=\"news-date\">" +
-                    "<span class=\"news-date-text\">" + d[0].date + "</span>" +
-                "</div>" +
-                "<a href=\"#\" class=\"news-common\">" + d[0].text + "</a>" +
-                "<a href=\"#\" class=\"read-news news-date-text\">Далее...</a>" +
-            "</div>" +
-            "</div>"
-                );
-                 for(let i = 1; i < 3; i++){
-             $('.area_for_news').append(
-            "<div class=\"news-block\">" +
-                "<div class=\"row\">" +
-                    "<div class=\"col-md-8 col-md-push-4\">" +
-                        "<div class=\"news-header\">" +
-                        "<a href=\"#\">" + d[i].text + "</a>" +
-                    "</div>" +
-                "</div>" +
-                "<div class=\"col-md-4 col-md-pull-8\">" +
-                    "<img src=" + d[i].img + "alt=\"Изображение новости\" class=\"img-responsive img-news\">" +
-                "</div>" +
-            "</div>" +
-            "<div class=\"col-md-8 col-md-offset-4 news-content\">" +
-                "<div class=\"data-img\">" +
-                    "<img src=\"images/notebook.png\" alt=\"Дата: \" class=\"news-date\">" +
-                    "<span class=\"news-date-text\">" + d[i].date + "</span>" +
-                "</div>" +
-                "<a href=\"#\" class=\"news-common\">" + d[i].text + "</a>" +
-                "<a href=\"#\" class=\"read-news news-date-text\">Далее...</a>" +
-            "</div>" +
-            "</div>");
-                    }
-                return;
-            }
-            else {
-                 for(let i = 0; i < 3; i++){
-             $('.area_for_news').append(
-            "<div class=\"news-block\">" +
-                "<div class=\"row\">" +
-                    "<div class=\"col-md-8 col-md-push-4\">" +
-                        "<div class=\"news-header\">" +
-                        "<a href=\"#\">" + d[i].text + "</a>" +
-                    "</div>" +
-                "</div>" +
-                "<div class=\"col-md-4 col-md-pull-8\">" +
-                    "<img src=" + d[i].img + "alt=\"Изображение новости\" class=\"img-responsive img-news\">" +
-                "</div>" +
-            "</div>" +
-            "<div class=\"col-md-8 col-md-offset-4 news-content\">" +
-                "<div class=\"data-img\">" +
-                    "<img src=\"images/notebook.png\" alt=\"Дата: \" class=\"news-date\">" +
-                    "<span class=\"news-date-text\">" + d[i].date + "</span>" +
-                "</div>" +
-                "<a href=\"#\" class=\"news-common\">" + d[i].text + "</a>" +
-                "<a href=\"#\" class=\"read-news news-date-text\">Далее...</a>" +
-            "</div>" +
-            "</div>");
-                    }
-                 return;
-             }
-            }
-            }
-    });
-});
-</script>
 </body>
 </html>
